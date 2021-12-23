@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <title>Greg's Gambits</title>
+    <link href="greg.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script>
+        function getName()
+        {
+            var name = prompt("Please enter your name", " ");
+            document.getElementById("myname").innerHTML = name;
+        }
+        function getUserName() {
+            var username = prompt("Please enter a username", " ");
+            document.getElementById("myusername").innerHTML = username;
+        }
+        function getAvatar() {
+            window.open('avatars.html');
+        }
+        function pickAvatar() {
+            var avatarname = prompt("Enter the avatar you want", "Bunny");
+            document.getElementById("myavatarname").innerHTML = avatarname;
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+
+        <img src="images/superhero.jpg" width="120" height="120" class="floatleft" />
+        <h1 id="logo"><em>Greg's Gambits </em></h1>
+
+        <h2 align="center"><em> Games for Everyone!</em></h2>
+
+        <p>&nbsp;</p>
+        <div id="nav">
+            <p>
+                <a href="index.html">Home</a>
+                <a href="greg.html">About Greg</a>
+                <a href="play_games.html">Play a Game</a>
+                <a href="sign.html">Sign In</a>
+                <a href="contact.html">Contact Us</a>
+            </p>
+            <p><a href="aboutyou.html">Tell greg about you</a></p>
+        </div>
+        <div id="content">
+             <button type="button" onclick="getName()"> Enter your name </button>
+
+            <p> Hi there, <span id="myname">Greg </span> </p>
+            <p>&nbsp;</p>
+             <button type="button" onclick="getUserName()"> Enter a Username </button>
+            <p> UserName: <span id="myusername">KingGreg </span> </p>
+            <p>&nbsp;</p>
+            <p><button type="button" onclick="getAvatar()"> See the Avatar choices </button></p>
+            <p>&nbsp;</p>
+
+           <p> <button type="button" onclick="pickAvatar()"> Select your avatar </button>
+            Avator selected: <span id="myavatarname">superGreg </span> </p>
+            <p>&nbsp;</p>
+        </div>
+        <div id="footer">
+            Copyright &copy; 2013 Greg's Gambits<br />
+            <a href="mailto:bhawani@khadka.com">bhawani@khadka.com</a>
+        </div>
+    </div>
+</body>
+</html>
